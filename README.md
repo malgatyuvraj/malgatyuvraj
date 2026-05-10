@@ -1,28 +1,4 @@
-Ran command: `python3 -c '
-import urllib.request
-import json
 
-repos = [
-    "malgatyuvraj/supermind-macapp",
-    "malgatyuvraj/Project-SuperMind-dollpreet",
-    "aryanbains/SuperMind-Windows-App",
-    "aryanbains/FlowDocs"
-]
-
-for repo in repos:
-    url = f"https://api.github.com/repos/{repo}"
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    try:
-        with urllib.request.urlopen(req) as response:
-            data = json.loads(response.read().decode())
-            print(f"Repo: {repo}")
-            print(f"Desc: {data.get(\"description\")}")
-            print(f"Lang: {data.get(\"language\")}")
-            print("---")
-    except Exception as e:
-        print(f"Error for {repo}: {e}")
-'`
-Ran command: `cat << 'EOF' > /tmp/get_repos.py
 import urllib.request
 import json
 
