@@ -1,29 +1,4 @@
 
-import urllib.request
-import json
-
-repos = [
-    "malgatyuvraj/supermind-macapp",
-    "malgatyuvraj/Project-SuperMind-dollpreet",
-    "aryanbains/SuperMind-Windows-App",
-    "aryanbains/FlowDocs"
-]
-
-for repo in repos:
-    url = f"https://api.github.com/repos/{repo}"
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    try:
-        with urllib.request.urlopen(req) as response:
-            data = json.loads(response.read().decode())
-            print(f"Repo: {repo}")
-            print(f"Desc: {data.get('description')}")
-            print(f"Lang: {data.get('language')}")
-            print("---")
-    except Exception as e:
-        print(f"Error for {repo}: {e}")
-EOF
-python3 /tmp/get_repos.py`
-
 <h1 align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=800&lines=Hi+there,+I'm+Yuvraj+👋;AI%2FML+%2B+Full-Stack+Developer;Always+building,+always+learning...;Turning+ideas+into+reality" alt="Typing SVG" />
 </h1>
