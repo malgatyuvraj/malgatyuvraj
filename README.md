@@ -66,17 +66,7 @@ My progression over the years, based on my repository history:
 
 ---
 
-### 📊 GitHub Stats
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=malgatyuvraj&show_icons=true&theme=tokyonight" alt="Yuvraj's GitHub stats" />
-</p>
-<br>
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=malgatyuvraj&layout=compact&theme=tokyonight" alt="Top Languages" />
-</p>
-
----
 
 ### 🤝 Connect with Me
 
